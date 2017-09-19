@@ -26,7 +26,6 @@ def excel_table_byindex(file= '奖励明细_20170911145446.xlsx',colnameindex=0,
              list.append(app)
     return list
 
-
 # 根据名称获取Excel表格中的数据   参数:file：Excel文件路径     colnameindex：表头列名所在行的所以  ，by_name：Sheet1名称
 def excel_table_byname(file = '奖励明细_20170911145446.xlsx', colnameindex = 0, by_name = u'Worksheet'):
     data = open_excel(file)

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>ES6</title>
+</head>
+<body bgcolor="blue">
+    <script src="require.js"></script>
+    <script>
+        require(['scripts/config.js'], function() {
+            // Configuration loaded now, safe to do other require calls
+            // that depend on that config.
+            require(['foo'], function(foo) {
+
+            });
+        });
+    </script>
+</body>
+</html>

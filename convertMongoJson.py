@@ -8,7 +8,7 @@ from dateutil import tz
 # import sys
 # reload(sys)
 # sys.setdefaultencoding('utf-8')
-staffFile = open('sharecampaignVoteLog-2017-09-18.json', 'r')
+staffFile = open('2017-09-18.json', 'r')
 
 staffMap = {}
 

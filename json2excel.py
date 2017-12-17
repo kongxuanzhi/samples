@@ -3,7 +3,6 @@ __author__ = 'faiyer'
 import json
 from openpyxl import *
 import time
-# https://ajax.quncrm.com/59a4feb1e7d5c50a2b71493a/api/sharecampaign/vote-logs?tmoffset=-8&time=1505717977679&campaignId=59ae5d1b84da2e00522cb5be&contestantPhone=&orderBy=%7B%22createdAt%22:%22desc%22%7D&page=1&per-page=1000
 
 fp = open('../statics/aliyun.json', 'r')
 data = json.loads(fp.read(), encoding='Unicode')

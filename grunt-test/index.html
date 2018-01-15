@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>crop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <link rel="stylesheet" href="croppie.css" />
+  <script src="jquery-3.2.1.js"></script>
+  <script src="croppie.js"></script>
+</head>
+<body>
+  <div class="demo"></div>
+  <!-- <script>
+    $('.demo').croppie({
+        url: 'demo-1.jpg',
+    });
+  </script> -->
+    <!-- or even simpler -->
+  <img id="demo-basic" class="my-image" src="demo-1.jpg" />
+  <script>
+    // $('.my-image').croppie();
+    var basic = $('#demo-basic').croppie({
+    viewport: {
+        width: 150,
+        height: 200
+    }
+    });
+    basic.croppie('bind', {
+        url: 'demo-1.jpg',
+        points: [77,469,280,739]
+    });
+    //on button click
+    basic.croppie('result', 'html').then(function(html) {
+        // html is div (overflow hidden)
+        // with img positioned inside.
+    });
+  </script>
+
+  <a href="http://foliotek.github.io/Croppie/#documentation"></a>
+</body>
+</html>
+

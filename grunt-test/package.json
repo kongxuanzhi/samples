@@ -1,0 +1,23 @@
+{
+  "name": "grunt-test",
+  "version": "0.0.0",
+  "description": "happy is ok",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "kay",
+    "word"
+  ],
+  "author": "tom",
+  "license": "no",
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
